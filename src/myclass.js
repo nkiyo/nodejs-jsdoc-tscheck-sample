@@ -1,9 +1,9 @@
 class MyClass {
     /**
      * hogehoge
-     * @param {number} x 
-     * @param {number} y 
-     * @param {string} s 
+     * @param {number} x hogehoge
+     * @param {number} y hogehoge
+     * @param {string} s hogehoge
      */
     constructor(x, y, s) {
         this._x = x
@@ -13,7 +13,7 @@ class MyClass {
 
     /**
      * hogehoge
-     * @return {number}
+     * @return {number} hogehoge
      */
     getX() {
         return this._x;
@@ -21,7 +21,7 @@ class MyClass {
     
     /**
      * hogehoge
-     * @return {number}
+     * @return {number} hogehoge
      */
     getY() {
         return this._y;
@@ -29,10 +29,19 @@ class MyClass {
 
     /**
      * hogehoge
-     * @return {string}
+     * @return {string} hogehoge
      */
     getS() {
         return this._s;
+    }
+
+    /**
+     * hoge
+     * @param {number} n hogehoge
+     * @return {{ x: number, y: number, s: string , n: number}} hogehoge
+     */
+    getJSON(n) {
+        return {x: this._x, y: this._y, s: this._s, n}
     }
 }
 
