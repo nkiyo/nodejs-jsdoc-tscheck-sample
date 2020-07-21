@@ -9,3 +9,5 @@ const mcs = mc.getS()
 /** @type {{ x: number, y: number, s: string , n: number}} */
 const obj = mc.getJSON(123)
 console.log(`${JSON.stringify(obj)}`)
+
+// TODO 型の途中で改行したい
