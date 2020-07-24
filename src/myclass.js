@@ -38,7 +38,11 @@ class MyClass {
     /**
      * hoge
      * @param {number} n hogehoge
-     * @return {{ x: number, y: number, s: string , n: number}} hogehoge
+     * @return {{
+     * x: number,
+     * y: number,
+     * s: string ,
+     * n: number}} hogehoge
      */
     getJSON(n) {
         return {x: this._x, y: this._y, s: this._s, n}
