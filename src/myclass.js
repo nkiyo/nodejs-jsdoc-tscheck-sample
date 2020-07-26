@@ -38,14 +38,20 @@ class MyClass {
     /**
      * hoge
      * @param {number} n hogehoge
+     * @param {number} [n2=123] hogehoge
      * @return {{
      * x: number,
      * y: number,
-     * s: string ,
-     * n: number}} hogehoge
+     * s: string,
+     * n: number,
+     * n2: number}
+     * | null} hogehoge
      */
-    getJSON(n) {
-        return {x: this._x, y: this._y, s: this._s, n}
+    getJSON(n, n2 = 123) {
+        if(n !== 999) {
+            return {x: this._x, y: this._y, s: this._s, n, n2}
+        }
+        return null
     }
 }
 

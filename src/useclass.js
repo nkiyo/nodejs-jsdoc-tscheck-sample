@@ -9,7 +9,14 @@ const mcs = mc.getS()
 /** @type {{
  * x: number,
  * y: number,
- * s: string ,
- * n: number}} 型定義の途中で改行OK*/
+ * s: string,
+ * n: number,
+ * n2: number}
+ * | null} 型定義の途中で改行OK, union types も OK */
 const obj = mc.getJSON(123)
 console.log(`${JSON.stringify(obj)}`)
+
+/** @type {(x: number) => void} 関数*/
+const varfunc = (x) => { console.log(`### ${x}`)}
+//varfunc('hoge')
+varfunc(1234)
