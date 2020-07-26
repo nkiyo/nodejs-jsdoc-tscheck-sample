@@ -14,7 +14,7 @@ const mcs = mc.getS()
  * n2: number}
  * | null}
  * 型定義の途中で改行OK, union types も OK
- * ただし、関数の戻り値の型と合ってなくても警告なし...設定の問題か？ */
+ * ただし、関数の戻り値の型と合ってなくても警告なし(無いほうが自動で推論してくれるので良い)...設定の問題か？ */
 const obj = mc.getJSON(123)
 console.log(`${JSON.stringify(obj)}`)
 
