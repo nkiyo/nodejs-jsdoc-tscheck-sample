@@ -1,8 +1,15 @@
 {
   "devDependencies": {
+    "babel-jest": "^26.2.2",
+    "jest": "^26.2.2",
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test": "NODE_ENV=test jest ./src",
+    "test-with-coverage": "npm test -- --coverage"
+  },
+  "jest": {
+    "verbose": true
   }
 }
